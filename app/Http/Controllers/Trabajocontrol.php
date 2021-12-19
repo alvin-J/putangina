@@ -7,14 +7,6 @@ use Illuminate\Http\Request;
 class Trabajocontrol extends Controller
 {
     //
-    public function signup() {
-        return view("signup");
-    }  
-
-    public function loginpage() {
-        return view("login");
-    }
-
     public function search() {
         return view("worker.search");
     }

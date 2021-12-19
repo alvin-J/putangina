@@ -19,7 +19,7 @@
 						
 					</div>
 					<div class='reviews-div'>
-						<div class='item-rev'>
+						<!--div class='item-rev'>
 							<p> 
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
@@ -28,7 +28,7 @@
 								<i class="fas fa-star"></i>
 								&nbsp; <small class='blackit'> 219 reviews </small>
 							</p>
-						</div>
+						</div-->
 						<!--div class='item-rev'>
 							<p> <strong class='blackit'> Good Payer: <br/></strong>
 								<i class="fas fa-star"></i>

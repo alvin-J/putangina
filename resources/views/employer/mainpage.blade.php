@@ -1,22 +1,30 @@
 @section('title','Home')
 @include('header')
-	<div class='notification-div'>
-		<ul>
-			<li> Alvin accepted your job offer </li>
-		</ul>
-	</div>
+
+	@if(session()->has('msg'))
+		<div class='notification-div'>
+			<ul>
+				<?php 
+					$msg = session()->get('msg');
+					echo "<li> {$msg} </li>";
+				?>				
+			</ul>
+		</div>
+	@endif
 	<div class='list-wrap'>
 		<div class='div-greeter'>
-			<h6> Welcome <br/> Home, Alvin </h6>
+			<h6> Welcome <br/> Home, Alvin [<small> <a href="{{ url('/logout') }}"> logout </a> </small>]</h6>
 		</div>
 		<div class='div-navigation'>
 			<h6> Navigation </h6>
 			<div class='thenavs'>
 				<div class='nav-item'>
-					<div class='nav-item-bg'>
-						<i class="fas fa-door-open"></i>
-					</div>
-					<p> OPEN A JOB </p>
+					<a href="{{ url('employer/openajob') }}">
+						<div class='nav-item-bg'>
+							<i class="fas fa-door-open"></i>
+						</div>
+						<p> OPEN A JOB </p>
+					</a>
 				</div>
 				<div class='nav-item'>
 					<div class='nav-item-bg'>
